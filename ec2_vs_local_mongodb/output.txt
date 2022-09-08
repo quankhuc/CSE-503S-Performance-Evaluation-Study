@@ -1,0 +1,9 @@
+-----------------------------------------------
+EC2 t2.micro instance:
+Database test exists
+1000 insertions took 19.62 seconds
+1000 selections took 13.93 seconds
+1000 updates took 19.90 seconds
+1000 deletions took 19.73 seconds
+-----------------------------------------------
+Local Laptop (Macbook Pro 2021):
