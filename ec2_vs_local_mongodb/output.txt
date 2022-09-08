@@ -7,3 +7,8 @@ Database test exists
 1000 deletions took 19.73 seconds
 -----------------------------------------------
 Local Laptop (Macbook Pro 2021):
+Database test exists
+1000 insertions took 58.82 seconds
+1000 selections took 55.31 seconds
+1000 updates took 60.44 seconds
+1000 deletions took 60.42 seconds
