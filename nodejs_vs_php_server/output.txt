@@ -1,3 +1,4 @@
+Start testing GET endpoint of PHP server
 This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -13,35 +14,36 @@ Document Path:          /CSE-503S-PERFORMANCE-EVALUATION-STUDY/nodejs_vs_php_ser
 Document Length:        196 bytes
 
 Concurrency Level:      300
-Time taken for tests:   1.121 seconds
+Time taken for tests:   1.490 seconds
 Complete requests:      2000
 Failed requests:        0
 Non-2xx responses:      2000
 Total transferred:      762000 bytes
 HTML transferred:       392000 bytes
-Requests per second:    1784.64 [#/sec] (mean)
-Time per request:       168.101 [ms] (mean)
-Time per request:       0.560 [ms] (mean, across all concurrent requests)
-Transfer rate:          664.01 [Kbytes/sec] received
+Requests per second:    1342.50 [#/sec] (mean)
+Time per request:       223.464 [ms] (mean)
+Time per request:       0.745 [ms] (mean, across all concurrent requests)
+Transfer rate:          499.50 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    7   5.5      4      24
-Processing:     7  153  33.3    165     198
-Waiting:        1  153  33.3    165     198
-Total:          7  160  31.4    171     202
+Connect:        1    9   5.9      8      20
+Processing:     6  204  56.1    211     303
+Waiting:        1  204  56.1    210     302
+Total:          8  213  54.5    219     311
 
 Percentage of the requests served within a certain time (ms)
-  50%    171
-  66%    176
-  75%    179
-  80%    183
-  90%    188
-  95%    193
-  98%    198
-  99%    200
- 100%    202 (longest request)
+  50%    219
+  66%    237
+  75%    253
+  80%    261
+  90%    276
+  95%    286
+  98%    298
+  99%    305
+ 100%    311 (longest request)
 ------------------------------------------------------------------------------------------------------------------
+Start testing POST endpoint of PHP server
 This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -57,38 +59,39 @@ Document Path:          /CSE-503S-PERFORMANCE-EVALUATION-STUDY/nodejs_vs_php_ser
 Document Length:        Variable
 
 Concurrency Level:      300
-Time taken for tests:   1.227 seconds
+Time taken for tests:   1.331 seconds
 Complete requests:      2000
 Failed requests:        0
 Non-2xx responses:      2000
 Total transferred:      762000 bytes
 Total body sent:        496000
 HTML transferred:       392000 bytes
-Requests per second:    1630.64 [#/sec] (mean)
-Time per request:       183.977 [ms] (mean)
-Time per request:       0.613 [ms] (mean, across all concurrent requests)
-Transfer rate:          606.71 [Kbytes/sec] received
-                        394.92 kb/s sent
-                        1001.63 kb/s total
+Requests per second:    1502.46 [#/sec] (mean)
+Time per request:       199.672 [ms] (mean)
+Time per request:       0.666 [ms] (mean, across all concurrent requests)
+Transfer rate:          559.02 [Kbytes/sec] received
+                        363.88 kb/s sent
+                        922.90 kb/s total
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    9   5.2      6      26
-Processing:    17  168  41.1    173     240
-Waiting:        1  167  41.1    173     240
-Total:         17  176  39.4    181     245
+Connect:        1    9   5.0      9      23
+Processing:     8  182  37.2    190     238
+Waiting:        1  181  37.1    189     236
+Total:          9  191  36.9    200     247
 
 Percentage of the requests served within a certain time (ms)
-  50%    181
-  66%    194
-  75%    200
-  80%    203
-  90%    227
-  95%    233
-  98%    237
-  99%    239
- 100%    245 (longest request)
+  50%    200
+  66%    206
+  75%    213
+  80%    216
+  90%    223
+  95%    227
+  98%    235
+  99%    237
+ 100%    247 (longest request)
 ------------------------------------------------------------------------------------------------------------------
+Start testing GET endpoint of NodeJS server
 This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -101,37 +104,38 @@ Server Hostname:        3.15.210.36
 Server Port:            3000
 
 Document Path:          /
-Document Length:        59 bytes
+Document Length:        53 bytes
 
 Concurrency Level:      300
-Time taken for tests:   1.441 seconds
+Time taken for tests:   1.849 seconds
 Complete requests:      2000
 Failed requests:        0
-Total transferred:      596000 bytes
-HTML transferred:       118000 bytes
-Requests per second:    1388.19 [#/sec] (mean)
-Time per request:       216.108 [ms] (mean)
-Time per request:       0.720 [ms] (mean, across all concurrent requests)
-Transfer rate:          403.99 [Kbytes/sec] received
+Total transferred:      584000 bytes
+HTML transferred:       106000 bytes
+Requests per second:    1081.84 [#/sec] (mean)
+Time per request:       277.304 [ms] (mean)
+Time per request:       0.924 [ms] (mean, across all concurrent requests)
+Transfer rate:          308.49 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0   15   7.8     16      36
-Processing:     9  191  44.6    196     272
-Waiting:        2  134  37.6    141     202
-Total:         10  206  46.0    209     297
+Connect:        0   14   7.5     15      35
+Processing:    26  248  78.2    269     362
+Waiting:       15  149  58.0    154     266
+Total:         26  263  80.0    287     375
 
 Percentage of the requests served within a certain time (ms)
-  50%    209
-  66%    219
-  75%    226
-  80%    229
-  90%    268
-  95%    278
-  98%    289
-  99%    296
- 100%    297 (longest request)
+  50%    287
+  66%    307
+  75%    313
+  80%    315
+  90%    321
+  95%    360
+  98%    371
+  99%    371
+ 100%    375 (longest request)
 ------------------------------------------------------------------------------------------------------------------
+Start testing POST endpoint of NodeJS server
 This is ApacheBench, Version 2.3 <$Revision: 1901567 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -147,34 +151,34 @@ Document Path:          /
 Document Length:        Variable
 
 Concurrency Level:      300
-Time taken for tests:   1.678 seconds
+Time taken for tests:   2.184 seconds
 Complete requests:      2000
 Failed requests:        0
-Total transferred:      596000 bytes
+Total transferred:      584000 bytes
 Total body sent:        372000
-HTML transferred:       118000 bytes
-Requests per second:    1192.16 [#/sec] (mean)
-Time per request:       251.644 [ms] (mean)
-Time per request:       0.839 [ms] (mean, across all concurrent requests)
-Transfer rate:          346.94 [Kbytes/sec] received
-                        216.54 kb/s sent
-                        563.48 kb/s total
+HTML transferred:       106000 bytes
+Requests per second:    915.87 [#/sec] (mean)
+Time per request:       327.557 [ms] (mean)
+Time per request:       1.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          261.17 [Kbytes/sec] received
+                        166.36 kb/s sent
+                        427.53 kb/s total
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0   19  10.4     16      48
-Processing:     7  218  46.1    220     310
-Waiting:        1  153  48.3    156     242
-Total:          7  236  46.8    235     325
+Connect:        0   15   8.3     15      39
+Processing:    46  299  97.6    322     582
+Waiting:       21  175  68.2    185     361
+Total:         52  314 100.3    338     583
 
 Percentage of the requests served within a certain time (ms)
-  50%    235
-  66%    252
-  75%    255
-  80%    264
-  90%    313
-  95%    320
-  98%    321
-  99%    322
- 100%    325 (longest request)
+  50%    338
+  66%    350
+  75%    359
+  80%    362
+  90%    434
+  95%    442
+  98%    448
+  99%    453
+ 100%    583 (longest request)
 ------------------------------------------------------------------------------------------------------------------
